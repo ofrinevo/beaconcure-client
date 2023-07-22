@@ -1,1 +1,8 @@
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let fileName of fileNames">
+      <a [routerLink]="['/file',fileName]">
+      {{fileName}}
+      </a>
+  </mat-list-item>
+</mat-list>
 
