@@ -1,0 +1,8 @@
+<h4>These are the tables in: {{id}}</h4>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let tableName of tableNames">
+    <a [routerLink]="['./',tableName]">
+      {{tableName}}
+    </a>
+  </mat-list-item>
+</mat-list>
